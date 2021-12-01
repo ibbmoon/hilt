@@ -16,16 +16,16 @@ class MainActivity : AppCompatActivity() {
 
     var TAG = javaClass.simpleName
     //@Inject lateinit var analytics: AnalyticsAdapter
-    @Inject lateinit var aType: ATypeClass
-    @Inject lateinit var aclass: ClassA
-    @Inject lateinit var bclass: ClassB
+//    @Inject lateinit var aType: ATypeClass
+//    @Inject lateinit var aclass: ClassA
+//    @Inject lateinit var bclass: ClassB
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.main_activity)
-        Log.e(TAG, aType.doByteTest())
-        Log.e(TAG, aclass.doTestA())
-        Log.e(TAG, bclass.showString())
+//        Log.e(TAG, aType.doByteTest())
+//        Log.e(TAG, aclass.doTestA())
+//        Log.e(TAG, bclass.showString())
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.container, MainFragment.newInstance())
